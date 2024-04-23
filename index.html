@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Arcane</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Arcane</h1>
+    <ul class="notifications"></ul>
+    <br><br>
+    <div class="playlist">
+      <h2>Play music!</h2>
+      <ul id="song-list">
+        <li data-src="videoplayback.mp4">
+          <img src="dnimg.png"  class="thumbnail">
+          <span>Dhating Naach</span> 
+          <button class="play-button">&#9658;</button> 
+        </li>
+        <li data-src="sicko.mp4">
+          <img src="astro.png"  class="thumbnail">
+          <span>SICKO MODE</span>
+          <button class="play-button">&#9658;</button>
+        </li>
+        <li data-src="fein.m4a" value="3">
+          <img src="utopia.jpg" class="thumbnail">
+          <span>FE!N</span>
+          <button class="play-button">&#9658;</button>
+        </li>
+        <li data-src="song3.mp3">
+          <img src="thumbnail3.jpg" class="thumbnail">
+          <span>Song 3</span>
+          <button class="play-button">&#9658;</button>
+        </li>
+        <li data-src="song3.mp3">
+          <img src="thumbnail3.jpg" class="thumbnail">
+          <span>Song 3</span>
+          <button class="play-button">&#9658;</button>
+        </li>
+        <li data-src="song3.mp3">
+          <img src="thumbnail3.jpg" class="thumbnail">
+          <span>Song 3</span>
+          <button class="play-button">&#9658;</button>
+        </li>
+        <li data-src="song3.mp3">
+          <img src="thumbnail3.jpg" class="thumbnail">
+          <span>Song 3</span>
+          <button class="play-button">&#9658;</button>
+        </li>
+        <li data-src="song3.mp3">
+          <img src="thumbnail3.jpg" class="thumbnail">
+          <span>Song 3</span>
+          <button class="play-button">&#9658;</button>
+        </li>
+        <li data-src="song3.mp3">
+          <img src="thumbnail3.jpg" class="thumbnail">
+          <span>Song 3</span>
+          <button class="play-button">&#9658;</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="controls">
+      <div onclick="previousSong() "><i class='bx bx-rewind'></i></div>
+      <div onclick="skipP()"><i class='bx bxs-skip-previous-circle'></i></div>
+      <div onclick="playPause()"><i class='bx bx-pause' id="crtlIcon"></i></div>
+      <div onclick="skipF()"><i class='bx bxs-skip-next-circle'></i></div>
+      <div onclick="nextSong()"><i class='bx bx-fast-forward'></i></div>
+    </div>
+    <input type="range" value="0" id="progress"> 
+    <span><div class="current-time" id="ct">00:00</div></span>
+    <span><div class="song-duration" id="sd">00:00</div></span>
+  </footer>
+  <audio id="audio-player" controls hidden>
+    Your browser does not support the audio element.
+  </audio>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <script src="app.js"></script>
+</body>
+</html>
