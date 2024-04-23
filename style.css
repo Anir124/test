@@ -69,9 +69,9 @@ body {
   background-color: #333;
 }
 
-.thumbnail {
-  width: 100px; 
-  height: 100px; 
+.thumbnail{
+  width: 15vw; 
+  height: 15vw; 
   border-radius: 5px;
   margin-bottom: 10px; 
 }
